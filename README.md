@@ -88,7 +88,7 @@ Then setting the simulation to have 100 walkers with 2000 steps, the sampler is 
 
 After that the MCMC simulation can be started:
 
-    sampler = emcee.EnsembleSampler(nwalkers, ndim, lnprob,args=[args],threads=8)
+    sampler = emcee.EnsembleSampler(nwalkers, ndim, lnprob,args=[args])
     pos = sampler.run_mcmc(pos.T, iteration);
 
 The results of the chains are stored in sampler, and can be acessted easily by

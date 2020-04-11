@@ -57,6 +57,6 @@ for i in range(ndim):
 args = [time,flux,sig1,theta_m,theta_lim]
 
 #sample using emcee
-sampler = emcee.EnsembleSampler(nwalkers, ndim, lnprob,args=[args],threads=8)
+sampler = emcee.EnsembleSampler(nwalkers, ndim, lnprob,args=[args])
 pos = sampler.run_mcmc(pos.T, iteration);
 np.save('chain.dat',chain) #used after the simulation
