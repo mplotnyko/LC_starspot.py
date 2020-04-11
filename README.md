@@ -14,20 +14,17 @@ In the following code, the starspot is generated using a Gaussian perturbation a
 
 ## Example 
 This example can be found in the example.py file.
-'''
-from LC_GenMock import generate_mock_data, plot_mock_data
+'''from LC_GenMock import generate_mock_data, plot_mock_data
 import LC_model
 import numpy as np
 '''
 The first step is to generate transit data with a Starspot.
 Then the duration of transit and the strength of the perturbation due to the Starspot needs to be specified.
-'''
-transit_window = 10 #hours
+'''transit_window = 10 #hours
 spot_stength = 2000 #ppm
 spot_width = 0.03 #days
 spot_location = transit_window/24*0.5 #days
-starspot = [transit_window,spot_location,spot_stength,spot_width]
-'''
+starspot = [transit_window,spot_location,spot_stength,spot_width]'''
 Using quadratic limb darkening model the transit parameters (theta_0 & ld_coef) can be specified to generate the data.
 '''
 theta_0 = [140.5,0.0576,1.571,224.22] 
