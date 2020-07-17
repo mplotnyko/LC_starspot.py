@@ -10,7 +10,7 @@ In the following code, the starspot is generated using a Gaussian perturbation a
 
 1. Clone the repository
 
-```git clone https://github.com/fhorrobin/LC_starspot.py```
+```git clone https://github.com/mplotnyko/LC_starspot.py```
 
 ## Example 
 This example can be found in the example.py file.
